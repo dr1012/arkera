@@ -20,8 +20,5 @@ class TestIncrementDictionaryValues (TestCase):
         self.assertEqual(ddd['a'], 0)
 
 
-instance1 = TestIncrementDictionaryValues() 
-instance1.test_increment_dictionary_values()
-
 
 

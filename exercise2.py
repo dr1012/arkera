@@ -6,7 +6,7 @@ def largest_loss(pricelist):
     '''
     This function takes a list of prices and finds the largest loss.
 
-    The first 4 lines of code are not mendotary for the function to work but improve its overall speed as argmax/argmin are much faster to calculate than going the nested for loops.
+    The first 4 lines of code are not mendotary for the function to work but improve its overall speed as argmax/argmin are much faster to calculate than going through the nested for loops.
 
     'tqdm' is used to see a progress bar for the operation (in case the nest for loops are actually used).
     '''

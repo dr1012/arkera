@@ -8,7 +8,7 @@ def largest_loss(pricelist):
 
     The first 4 lines of code are not mendotary for the function to work but improve its overall speed as argmax/argmin are much faster to calculate than going through the nested for loops.
 
-    'tqdm' is used to see a progress bar for the operation (in case the nest for loops are actually used).
+    'tqdm' is used to see a progress bar for the operation (in case the nested for loops are actually used).
     '''
 
     index_max = np.argmax(pricelist)

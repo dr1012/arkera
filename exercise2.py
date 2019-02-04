@@ -34,14 +34,29 @@ import time
 test_prices = []
 
 for i in range(0,10000):
-    x = random.randint(1,10000)
+    x = random.randint(1,1000)
     test_prices.append(x)
 
 start = time.time()
-result = largest_loss([test_prices])
+result = largest_loss(test_prices)
 end = time.time()
-print('LARGEST LOSS: ' + str(result))
+print('LARGEST LOSS random sequence: ' + str(result))
 print(str(end - start) + ' seconds')
+
+
+case1 = [1,2,3,4,5,6,7,8,9]
+result1 = largest_loss(case1)
+case2 = [9,8,7,6,5,4,3,2,1]
+result2 = largest_loss(case2)
+case3 = [1,1]
+result3 = largest_loss(case3)
+case4 = [3,5,2,4,11,5,9,10,1]
+result4 = largest_loss(case4)
+
+print('LARGEST LOSS case1: ' + str(result1))
+print('LARGEST LOSS case2: ' + str(result2))
+print('LARGEST LOSS case3: ' + str(result3))
+print('LARGEST LOSS case4: ' + str(result4))
 
 
 
